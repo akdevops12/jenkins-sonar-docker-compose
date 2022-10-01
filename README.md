@@ -7,7 +7,7 @@
        - Jenkins is an open source automation server. It helps automate the parts of software development related to building, testing, and deploying, facilitating continuous integration and continuous delivery.
        - Compose is a tool for defining and running multi-container Docker applications.
 
-#  Pre-requite 
+#  Prerequisites
 
     - Create an AWS EC2 instance (Using ubuntu, ) 
     - Conect remotely to this AWS EC2 instance ( you must be in the repository where your aws EC2 key pair is located)
