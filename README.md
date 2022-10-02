@@ -1,5 +1,5 @@
 # jenkins-sonar-docker-compose
-# This code is a code to deploy a Jenkins and sonarqube server using a dockerfile.
+# This code is a code to deploy a Jenkins and sonarqube server using Docker Compose.
 
 # Definition 
 
@@ -20,10 +20,12 @@
     - Give ubuntu user permission to run a docker command as administrator 
         $ sudo usermod -aG docker ubuntu
 
-    - shut down the machine with "EXIT" command and reconnect remotely
-
+    - log out and log back in for your changes to take efec with the "exit" command and reconnect remotely
+        $ exit
 
 2. Install Docker-compose
+            
+	    Option 1
 	- To download and install the Compose CLI plugin, run:
         $ DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
         $ mkdir -p $DOCKER_CONFIG/cli-plugins
@@ -35,7 +37,9 @@
 	- Test the installation.
          $ docker compose version
             you must have "Docker Compose version v2.7.0"
-    - You can also run a command to install 
+	    
+	    option2
+    - You can also use this option to install Docker Compose
          $ sudo apt-get install docker-compose 
 
 
